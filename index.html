@@ -2,20 +2,21 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
         <h1>
         <title id="title">My Survery</title>
         <p id="description">Intake Form</p>
         </h1>
     </head>
     <form id="survey-form">
-        <label id="name-label">
-            <input type="text" id="name" placeholder="John Smith" required></input>
+        <label id="name-label">Please enter your name:
+            <input type="text" id="name" placeholder="John Smith" required></input><br>
         </label>
-        <label id="email-label">
-            <input type="text" id="email" placeholder="test@test.com" required></input>
+        <label id="email-label">Please enter your email:
+            <input type="text" id="email" placeholder="test@test.com" required></input><br>
         </label>
-        <label id="age">
-            <input type="number" min="1" max="100" placeholder="Your Age" required></input>
+        <label id="age">Please enter your age: 
+            <input type="number" min="1" max="100" placeholder="Your Age" required><br></input>
         </label>
         <label id="refer-label">How did you hear about us?
             <select id="dropdown">
@@ -25,7 +26,7 @@
                 <option value="3">LinkedIn</option>
                 <option value="4">Other</option>
                 <!--add input to other to have user fill out the refer source?-->
-            </select>
+            </select><br>
         </label>
             <label id="pronoun-label">What are your pronouns?
                 <select id="pronouns">
@@ -34,7 +35,20 @@
                     <option value="2">She/Her</option>
                     <option value="3">They/Them</option>
                     <!-- add other option with fill in/text input?-->
-                </select>
+                </select><br>
+            </label>
+            <label id="pets-label">Which do you prefer?<br>
+                <input type="radio" name="pets">Cats?</input>
+                <input type="radio" name="dogs">Dogs?</input><br>
+            </label>
+            <label id="check-label">What hobbies do you enjoy? Check all that apply:
+                <input type="checkbox">Hiking</input>
+                <input type="checkbox">Swimming</input>
+                <input type="checkbox">Reading</input>
+            </label><br>
+            <label id="text-label"> 
+                <textarea id="feedback" rows="4" cols="50">Please leave any feedback: </textarea>
             </label>
     </form>
+    <input type="submit" value="Submit!"></input>
 </html>
