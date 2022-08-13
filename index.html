@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
-        <h1>
-        <title id="title">My Survery</title>
+        <h1 id="title">
+        <title>My Survery</title>
         <p id="description">Intake Form</p>
         </h1>
     </head>
@@ -13,10 +13,10 @@
             <input type="text" id="name" placeholder="John Smith" required></input><br>
         </label>
         <label id="email-label">Please enter your email:
-            <input type="text" id="email" placeholder="test@test.com" required></input><br>
+            <input type="email" id="email" placeholder="test@test.com" required></input><br>
         </label>
-        <label id="age">Please enter your age: 
-            <input type="number" min="1" max="100" placeholder="Your Age" required><br></input>
+        <label id="number-label">Please enter your age: 
+            <input id="number" type="number" min="1" max="100" placeholder="Your Age" required><br></input>
         </label>
         <label id="refer-label">How did you hear about us?
             <select id="dropdown">
@@ -38,17 +38,17 @@
                 </select><br>
             </label>
             <label id="pets-label">Which do you prefer?<br>
-                <input type="radio" name="pets">Cats?</input>
-                <input type="radio" name="dogs">Dogs?</input><br>
+                <input type="radio" name="intake" value="pets">Cats?</input>
+                <input type="radio" name="intake" value="pets">Dogs?</input><br>
             </label>
             <label id="check-label">What hobbies do you enjoy? Check all that apply:
-                <input type="checkbox">Hiking</input>
-                <input type="checkbox">Swimming</input>
-                <input type="checkbox">Reading</input>
+                <input type="checkbox" name="intake" value="hiking">Hiking</input>
+                <input type="checkbox" name="intake" value="swimming">Swimming</input>
+                <input type="checkbox" name="intake" value="reading">Reading</input>
             </label><br>
             <label id="text-label"> 
                 <textarea id="feedback" rows="4" cols="50">Please leave any feedback: </textarea>
             </label>
+            <input id="submit" type="submit" value="Submit!"></input>
     </form>
-    <input type="submit" value="Submit!"></input>
 </html>
